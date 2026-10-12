@@ -3,10 +3,8 @@ def read_secret():
         password = f.read().strip()
     check(password)
 
-
 def check(password):
-    pass
-
+    return password == "Secret123"
 
 def main():
     read_secret()
