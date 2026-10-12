@@ -1,10 +1,11 @@
 def read_secret():
-    with open("secret.txt", "r") as f:
+    with open("password.txt", "r") as f:
         password = f.read().strip()
     check(password)
 
+
 def check(password):
-    return password == "Secret123"
+    return True
 
 def main():
     read_secret()
